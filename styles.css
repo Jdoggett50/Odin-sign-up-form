@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    max-width: 100%;
+    margin: none;
+    display: flex;
+    border: 1px solid black;
+}
+
+#logo-container {
+    width: 40%;
+    border: 1px solid blue;
+}
+
+#form-container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.form-field {
+    height: 33%;
+    border: 1px solid green;
+}
