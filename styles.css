@@ -30,12 +30,16 @@ img {
     height: 100%;
     width: 100%;
     border: 1px solid red;
+    box-shadow: 0 10px grey;
 }
 
 .form-field {
-    background-color: rgb(251, 234, 234);
     height: 33%;
     border: 1px solid green;
+}
+
+input[type="pwd"]:invalid {
+    background-color: rgba(255,170,190,0.3);
 }
 
 input:hover {
