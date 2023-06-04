@@ -1,18 +1,18 @@
-html {
+html,body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 #container {
     height: 100vh;
-    max-width: 100%;
-    margin: none;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #logo-container {
     width: 60rem;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 img {
@@ -23,19 +23,18 @@ img {
 
 .form-field:nth-child(2){
     background-color: rgba(210,200,190,0.1);
-
+    box-shadow: 3px 5px 8px lightgray;
 }
 
 #form-container {
     height: 100%;
     width: 100%;
-    border: 1px solid red;
-    box-shadow: 0 10px grey;
+    /* border: 1px solid red; */
 }
 
 .form-field {
     height: 33%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 input[type="pwd"]:invalid {
