@@ -1,6 +1,7 @@
 :root{
-    --beige-background: rgba(255,180,90, 0.4)
+    --beige-background: rgba(255,180,90, 0.2)
 }
+/* create metallic gradient for logo-text background */
 html,body {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ html,body {
     position: relative;
     height: 100vh;
     width: 60%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #logo-container .logo-text {
@@ -24,17 +25,6 @@ html,body {
     position: absolute;
     bottom: 150px;
     width: 100%;
-}
-
-.attribution {
-    display: flex;
-    justify-content: center;
-}
-
-.attribution a {
-    color: black;
-    position: absolute;
-    bottom: 2px;
 }
 
 .logo-text {
@@ -48,9 +38,15 @@ img {
     max-width: 100%;
 }
 
-.form-field:nth-child(2){
-    background-color: rgba(210,200,190,0.1);
-    box-shadow: 3px 5px 8px lightgray;
+.attribution {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a {
+    color: black;
+    position: absolute;
+    bottom: 2px;
 }
 
 #form-container {
@@ -59,9 +55,40 @@ img {
     border: 1px solid red;
 }
 
+/* .form-field p {
+    
+} */
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.form-field:nth-child(2){
+    background-color: rgba(210,200,190,0.1);
+    box-shadow: 3px 5px 8px lightgray;
+}
+
+.form-field p, 
+fieldset, 
+button, 
+p {
+    margin-left: 20px;
+}
+
+.form-field fieldset {
+    border: hidden;
+}
+
 .form-field {
     height: 33%;
     /* border: 1px solid green; */
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
 }
 
 input[type="password"]:invalid {
@@ -69,5 +96,5 @@ input[type="password"]:invalid {
 }
 
 input:hover {
-    border: 1px solid black;
+    border: 2px solid black;
 }
