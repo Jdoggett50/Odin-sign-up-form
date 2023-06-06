@@ -71,6 +71,7 @@ fieldset {
 }
 
 .form-content p,
+.form-content span,
 legend, 
 fieldset, 
 button, 
@@ -112,4 +113,10 @@ input[type="password"]:invalid {
 
 input:hover,:focus {
     outline: 1px solid blue;
+}
+
+.form-content button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 175px;
 }
