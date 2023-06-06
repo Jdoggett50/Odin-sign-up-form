@@ -23,31 +23,37 @@
             </div>
         </div>
         <div id="form-container">
-            <div class="form-field">
+            <div class="form-content">
                 <p>This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started <br><br>You <i>know</i> you want to.</p>
             </div>
-            <form action="post" class="form-field">
+            <form action="post" class="form-content">
                 <legend>Let's do this!</legend>
                 <fieldset>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname">
+                    <label for="fname" class="form-label">First Name
+                        <input type="text" id="fname" name="fname">
+                    </label>
+                    <label for="lname" class="form-label">Last Name
+                        <input type="text" id="lname" name="lname">
+                    </label>
                 </fieldset>
                 <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <label for="email" class="form-label">Email
+                        <input type="email" id="email" name="email">
+                    </label>
+                    <label for="phone-number" class="form-label">Phone Number
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </label>
                 </fieldset>
                 <fieldset>
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="pwd" required>
-                    <label for="pwd">Confirm Password</label>
-                    <input type="password" id="pwd" name="pwd" required>
+                    <label for="pwd" class="form-label">Password
+                        <input type="password" id="pwd" name="pwd" required>
+                    </label>
+                    <label for="pwd" class="form-label">Confirm Password
+                        <input type="password" id="pwd" name="pwd" required>
+                    </label>
                 </fieldset>
             </form>
-            <div class="form-field">
+            <div class="form-content">
                 <button>Create Account</button>
                 <p>Already have an account? <a href="#">log in</a></p>
             </div>

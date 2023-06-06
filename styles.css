@@ -63,12 +63,12 @@ fieldset {
     display: flex;
 }
 
-.form-field:nth-child(2){
+.form-content:nth-child(2){
     background-color: rgba(210,200,190,0.1);
     box-shadow: 3px 5px 8px lightgray;
 }
 
-.form-field p,
+.form-content p,
 legend, 
 fieldset, 
 button, 
@@ -76,13 +76,19 @@ p {
     margin-left: 30px;
 }
 
-.form-field fieldset {
+.form-content fieldset {
     border: none;
 }
 
-.form-field {
+.form-content {
     height: 33%;
     /* border: 1px solid green; */
+}
+
+.form-label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 input {
