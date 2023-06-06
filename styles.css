@@ -2,7 +2,9 @@
     --beige-background: rgba(255,180,90, 0.2)
 }
 /* create metallic gradient for logo-text background */
-html,body {
+html,
+body,
+legend {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,13 +57,10 @@ img {
     border: 1px solid red;
 }
 
-/* .form-field p {
-    
-} */
-
 fieldset {
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .form-field:nth-child(2){
@@ -69,15 +68,16 @@ fieldset {
     box-shadow: 3px 5px 8px lightgray;
 }
 
-.form-field p, 
+.form-field p,
+legend, 
 fieldset, 
 button, 
 p {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .form-field fieldset {
-    border: hidden;
+    border: none;
 }
 
 .form-field {
