@@ -1,11 +1,12 @@
 :root{
-    --beige-background: rgba(255,180,90, 0.2);
+    --custom-beige: rgba(125,70,0, 0.7);
 }
+
 @font-face {
     font-family: 'DMsans-regular';
     src: url(./downloads/DMSans-Regular.ttf);
 }
-/* create metallic gradient for logo-text background */
+
 html,
 body,
 legend {
@@ -22,18 +23,15 @@ p {
 
 #container {
     display: flex;
-    /* border: 1px solid black; */
 }
 
 #logo-container {
     position: relative;
     height: 100vh;
     width: 70%;
-    /* border: 1px solid blue; */
 }
 
 #logo-container .logo-text {
-    /* background-color: var(--beige-background); */
     position: absolute;
     font-family: 'DMsans-regular';
     font-weight: 500;
@@ -43,12 +41,6 @@ p {
     width: 100%;
 }
 
-/* .logo-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 img {
     height: 100vh;
     max-width: 100%;
@@ -56,10 +48,11 @@ img {
 
 .attribution {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .attribution a {
+    font-size: smaller;
     color: black;
     position: absolute;
     bottom: 2px;
@@ -68,9 +61,7 @@ img {
 #form-container {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 fieldset {
@@ -82,7 +73,7 @@ fieldset {
 }
 
 .form-content:nth-child(2){
-    box-shadow: 3px 5px 8px lightgray;
+    box-shadow: 3px 5px 10px var(--custom-beige);
 }
 
 .form-content p,
@@ -124,13 +115,29 @@ input {
 }
 
 input:hover,input:focus {
-    outline: 1px solid blue;
+    outline: 1px solid var(--custom-beige);
+}
+
+button:hover, button:focus {
+    outline: 1px solid var(--custom-beige);
 }
 
 .form-content button {
+    background-color: var(--custom-beige);
+    border: var(--custom-beige);
+    color: rgba(255, 255, 255, 0.928);
     margin-top: 25px;
     margin-bottom: 25px;
     width: 175px;
     height: 40px;
     border-radius: 6px; 
+}
+
+footer a:hover, a:focus {
+    font-size: large;
+    outline: 1px solid var(--custom-beige);
+}
+
+footer a {
+    color: var(--custom-beige);
 }
