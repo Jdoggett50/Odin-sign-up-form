@@ -33,17 +33,21 @@ p {
 }
 
 #logo-container .logo-text {
-    background-color: var(--beige-background);
+    /* background-color: var(--beige-background); */
     position: absolute;
-    bottom: 150px;
+    font-family: 'DMsans-regular';
+    font-weight: 500;
+    font-size: larger;
+    top: 50px;
+    left: 40px;
     width: 100%;
 }
 
-.logo-text {
+/* .logo-text {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 img {
     height: 100vh;
