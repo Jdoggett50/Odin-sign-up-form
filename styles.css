@@ -1,6 +1,10 @@
 :root{
     --beige-background: rgba(255,180,90, 0.2);
 }
+@font-face {
+    font-family: 'DMsans-regular';
+    src: url(./downloads/DMSans-Regular.ttf);
+}
 /* create metallic gradient for logo-text background */
 html,
 body,
@@ -8,6 +12,12 @@ legend {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+legend, 
+p {
+    font-family: 'DMsans-regular';
+    font-weight: bold;
 }
 
 #container {
@@ -52,7 +62,9 @@ img {
 }
 
 #form-container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -66,7 +78,6 @@ fieldset {
 }
 
 .form-content:nth-child(2){
-    background-color: rgba(210,200,190,0.1);
     box-shadow: 3px 5px 8px lightgray;
 }
 
@@ -79,13 +90,11 @@ p {
     margin-left: 40px;
 }
 
-.form-content {
-    height: 33%;
-    /* border: 1px solid green; */
-}
-
 .form-content p {
     padding-top: 80px;
+    font-family: 'DMsans-regular';
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .form-content legend 
@@ -95,6 +104,9 @@ p {
 }
 
 .form-label {
+    font-family: 'DMsans-regular';
+    font-size: 10px;
+    font-weight: 500;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -107,11 +119,7 @@ input {
     padding: 0;
 }
 
-input[type="password"]:invalid {
-    outline: rgba(255,170,190,1);
-}
-
-input:hover,:focus {
+input:hover,input:focus {
     outline: 1px solid blue;
 }
 
@@ -119,4 +127,6 @@ input:hover,:focus {
     margin-top: 25px;
     margin-bottom: 25px;
     width: 175px;
+    height: 40px;
+    border-radius: 6px; 
 }
