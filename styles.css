@@ -1,5 +1,6 @@
 :root{
     --custom-beige: rgba(125,70,0, 0.7);
+    --beige-gradient: rgba(125,70,0,0.2);
 }
 
 @font-face {
@@ -72,8 +73,14 @@ fieldset {
     gap: 50px;
 }
 
+.form-content:nth-child(1) {
+    background: linear-gradient(var(--beige-gradient),white 30%) ;
+}
+
 .form-content:nth-child(2){
+    background-color: white;
     box-shadow: 3px 5px 10px var(--custom-beige);
+    z-index: 1;
 }
 
 .form-content p,
@@ -100,7 +107,7 @@ p {
 
 .form-label {
     font-family: 'DMsans-regular';
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +123,7 @@ input {
 
 input:hover,input:focus {
     outline: 1px solid var(--custom-beige);
+    border: none;
 }
 
 button:hover, button:focus {
@@ -138,6 +146,16 @@ footer a:hover, a:focus {
     outline: 1px solid var(--custom-beige);
 }
 
+footer {
+    height: 100%;
+    background: linear-gradient(white 70%,var(--beige-gradient));
+}
+
 footer a {
     color: var(--custom-beige);
+}
+
+fieldset:nth-last-child(1) span {
+    color: red;
+    height: 3px;
 }

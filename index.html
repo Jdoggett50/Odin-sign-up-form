@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chickadee</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -24,33 +25,36 @@
             <section class="form-content">
                 <p>This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started <br><br>You <i>know</i> you want to.</p>
             </section>
-            <form action="post" class="form-content">
-                <legend>Let's do this!</legend>
-                <fieldset>
-                    <label for="fname" class="form-label">FIRST NAME
-                        <input type="text" id="fname" name="fname">
-                    </label>
-                    <label for="lname" class="form-label">LAST NAME
-                        <input type="text" id="lname" name="lname">
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <label for="email" class="form-label">EMAIL
-                        <input type="email" id="email" name="email">
-                    </label>
-                    <label for="phone-number" class="form-label">PHONE NUMBER
-                        <input type="tel" id="phone-number" name="phone-number">
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <label for="pwd" class="form-label">PASSWORD
-                        <input type="password" id="pwd" name="pwd" required>
-                    </label>
-                    <label for="pwd" class="form-label">CONFIRM PASSWORD
-                        <input type="password" id="pwd" name="pwd" required>
-                    </label>
-                </fieldset>
-            </form>
+            <section class="form-content"> 
+                <form action="" id="form" no>
+                    <legend>Let's do this!</legend>
+                    <fieldset class="name-field">
+                        <label for="fname" class="form-label" aria-required="true">FIRST NAME
+                            <input type="text" id="fname" name="fname" required>
+                        </label>
+                        <label for="lname" class="form-label" aria-required="true">LAST NAME
+                            <input type="text" id="lname" name="lname" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="contact-field">
+                        <label for="email" class="form-label" aria-required="true">EMAIL
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="phone-number" class="form-label" aria-required="true">PHONE NUMBER
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="pwd" class="form-label" id="password" aria-required="true">PASSWORD
+                            <input type="password" id="main-pwd" name="pwd" required>
+                        </label>
+                        <label for="pwd" class="form-label" aria-required="true">CONFIRM PASSWORD
+                            <input type="password" id="confirm-pwd" name="pwd" required>
+                            <span class="error"></span>
+                        </label>
+                    </fieldset>
+                </form>
+            </section>
             <footer class="form-content">
                 <button>Create Account</button>
                 <br><span>Already have an account? <a href="#">log in</a></span>
